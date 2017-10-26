@@ -29,6 +29,24 @@
     [self initializUI];
 }
 
+//改变默认TabBar高度
+- (void)viewWillLayoutSubviews {
+    CGRect tabFrame = self.tabBar.frame;
+    CGFloat tabBarH = self.tabBar.frame.size.height;
+    tabFrame.origin.y = self.view.frame.size.height - tabBarH - AAdaption(3.5);
+    if ([UIDevice phoneModel] == Device_iPhoneX) {
+        tabFrame.origin.y = self.view.frame.size.height - tabBarH;
+    }
+    self.tabBar.frame = tabFrame;
+    
+    //tabBar工具栏背景图片
+    UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_menu_bg"]];
+    img.contentMode = UIViewContentModeScaleToFill;
+    img.backgroundColor = [UIColor clearColor];
+    img.frame = CGRectMake(0, -5.0, SCREEN_WIDTH, tabBarH + AAdaption(10.0));
+    [[self tabBar] insertSubview:img atIndex:0];
+}
+
 - (void)initializUI {
     //tabBar工具栏背景图片
     UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_menu_bg"]];
