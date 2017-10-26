@@ -7,8 +7,16 @@ target 'CleverParents' do
 
   # Pods for CleverParents
   platform :ios, "9.0"
-  #网络请求
+  
+  
+  # 网络请求
   pod 'AFNetworking'
+  
+  # 数据库工具类（方便操作FMDB数据库）
+  pod 'LKDBHelper'
+  
+  
+ # 个推
 #  pod 'GTSDK', '2.0.0.0-noidfa'
 #
 #

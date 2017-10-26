@@ -33,7 +33,7 @@
     // 注册 APNs
     [self registerRemoteNotification];
     
-    //加载主框架
+    // 加载主框架
     [self loadMainWindow];
     
     return YES;
@@ -141,7 +141,7 @@
 
 #pragma mark -- 自定义Method ------ Start ------
 
-//加载主框架
+// 加载主框架
 - (void)loadMainWindow {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[CLWRootTabBarViewController alloc] init];

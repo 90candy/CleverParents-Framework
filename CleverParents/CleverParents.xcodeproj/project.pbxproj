@@ -11,6 +11,8 @@
 		362587271FA1ADF6009AE1BF /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 362587241FA1ADEC009AE1BF /* Response.m */; };
 		362587281FA1ADFD009AE1BF /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 362587261FA1ADEC009AE1BF /* NetworkRequest.m */; };
 		362587361FA1B0B6009AE1BF /* CLWLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 362587381FA1B0B6009AE1BF /* CLWLocalization.strings */; };
+		3625873E1FA1B76F009AE1BF /* CLWBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625873D1FA1B76F009AE1BF /* CLWBaseModel.m */; };
+		362587411FA1B7D8009AE1BF /* CLWUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 362587401FA1B7D8009AE1BF /* CLWUserModel.m */; };
 		3630AA7C1F4A6A16005A55AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3630AA7B1F4A6A16005A55AD /* main.m */; };
 		3630AA7F1F4A6A16005A55AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3630AA7E1F4A6A16005A55AD /* AppDelegate.m */; };
 		3630AA851F4A6A16005A55AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3630AA831F4A6A16005A55AD /* Main.storyboard */; };
@@ -95,6 +97,10 @@
 		362587331FA1B039009AE1BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		362587371FA1B0B6009AE1BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CLWLocalization.strings"; sourceTree = "<group>"; };
 		362587391FA1B0BB009AE1BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CLWLocalization.strings; sourceTree = "<group>"; };
+		3625873C1FA1B76F009AE1BF /* CLWBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLWBaseModel.h; sourceTree = "<group>"; };
+		3625873D1FA1B76F009AE1BF /* CLWBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLWBaseModel.m; sourceTree = "<group>"; };
+		3625873F1FA1B7D8009AE1BF /* CLWUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLWUserModel.h; sourceTree = "<group>"; };
+		362587401FA1B7D8009AE1BF /* CLWUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLWUserModel.m; sourceTree = "<group>"; };
 		3630AA771F4A6A16005A55AD /* CleverParents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleverParents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3630AA7B1F4A6A16005A55AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3630AA7D1F4A6A16005A55AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +221,17 @@
 				362587241FA1ADEC009AE1BF /* Response.m */,
 			);
 			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		3625873B1FA1B757009AE1BF /* 自定义模型 */ = {
+			isa = PBXGroup;
+			children = (
+				3625873C1FA1B76F009AE1BF /* CLWBaseModel.h */,
+				3625873D1FA1B76F009AE1BF /* CLWBaseModel.m */,
+				3625873F1FA1B7D8009AE1BF /* CLWUserModel.h */,
+				362587401FA1B7D8009AE1BF /* CLWUserModel.m */,
+			);
+			path = "自定义模型";
 			sourceTree = "<group>";
 		};
 		3630AA6E1F4A6A16005A55AD = {
@@ -348,6 +365,7 @@
 				3630AAD51F4A7462005A55AD /* 配置文件 */,
 				3630AAB51F4A6DF0005A55AD /* 自定义控制器 */,
 				3630AAB61F4A6DF0005A55AD /* 自定义视图 */,
+				3625873B1FA1B757009AE1BF /* 自定义模型 */,
 				3625871D1FA1AD37009AE1BF /* 工具类 */,
 			);
 			path = "框架部分";
@@ -536,7 +554,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CLW;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = com.zhiweism;
 				TargetAttributes = {
 					3630AA761F4A6A16005A55AD = {
@@ -695,6 +713,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3625873E1FA1B76F009AE1BF /* CLWBaseModel.m in Sources */,
 				362587281FA1ADFD009AE1BF /* NetworkRequest.m in Sources */,
 				362587271FA1ADF6009AE1BF /* Response.m in Sources */,
 				362587201FA1AD76009AE1BF /* UIDevice+CLWPhoneModel.m in Sources */,
@@ -709,6 +728,7 @@
 				3630AAB91F4A6E31005A55AD /* CLWBaseViewController.m in Sources */,
 				3630AA7C1F4A6A16005A55AD /* main.m in Sources */,
 				3630AACB1F4A6F59005A55AD /* CLWMessageViewController.m in Sources */,
+				362587411FA1B7D8009AE1BF /* CLWUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,7 +818,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -806,7 +828,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -847,7 +873,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -855,7 +883,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
