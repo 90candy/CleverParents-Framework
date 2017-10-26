@@ -1,0 +1,27 @@
+//
+//  PrecompileHeader.pch
+//  CleverParents
+//
+//  Created by Candy on 2017/8/21.
+//  Copyright © 2017年 com.zhiweism. All rights reserved.
+//
+#ifndef PrecompileHeader_pch
+#define PrecompileHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//配置文件
+#import "SystemConfig.h"
+#import "Adaption.h"
+#import "CLWApiConfig.h"
+
+//自定义
+#import "ImageButton.h"
+
+//第三方
+#import "UIDevice+CLWPhoneModel.h"
+#import <AFNetworking.h>
+
+
+#endif /* PrecompileHeader_pch */

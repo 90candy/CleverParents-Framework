@@ -1,0 +1,28 @@
+/* 
+  CLWLocalization.strings
+  CleverParents
+
+  Created by Candy on 2017/10/26.
+  Copyright © 2017年 com.zhiweism. All rights reserved.
+*/
+
+// 使用方法 ：
+// NSLocalizedString(@"setting.autoLogin", @"自动登录")
+
+
+//如果创建.strings文件是自定义的名字的话，如当前我起名为 CleverLocalizable.strings,那么调用的方式为：
+//NSLocalizedStringFromTable(@”title”,@”CleverLocalizable”, nil)
+
+//当自定义名字后，使用NSLocalizedString的方式不起作用，这里要特别注意，注意，注意！！！(重要的说三遍)；
+
+// TabBar
+"tabBar.home" = "Home";
+"tabBar.school" = "School";
+"tabBar.message" = "Message";
+"tabBar.mine" = "Mine";
+
+// Details
+"details.detail1" = "Details UI";
+
+// Control（Button、Placeholder）
+"btn.back" = "Back";
