@@ -29,7 +29,6 @@
     [self initializUI];
 }
 
-
 - (void)initializUI {
     //tabBar工具栏背景图片
     UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_menu_bg"]];

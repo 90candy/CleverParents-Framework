@@ -19,11 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    //显示状态栏
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     // Do any additional setup after loading the view.
     self.navigationController.navigationBar.translucent = NO;
+    //去掉navigationBar顶部线条
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    
+    //去掉tabBar顶部线条
+    [self.tabBarController.tabBar setBackgroundImage:[UIImage new]];
+    self.tabBarController.tabBar.shadowImage = [UIImage new];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]
                                              initWithTitle:NSLocalizedStringFromTable(@"btn.back", CleverLocalizable, "返回")
                                              style:UIBarButtonItemStylePlain
