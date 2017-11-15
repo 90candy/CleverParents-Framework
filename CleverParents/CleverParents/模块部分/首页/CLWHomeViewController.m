@@ -9,6 +9,8 @@
 #import "CLWHomeViewController.h"
 
 #import "CLWDetailsViewController.h"
+#import "KCMainViewController.h"
+
 
 @interface CLWHomeViewController ()
 
@@ -36,7 +38,7 @@
 
 
 - (void)pushNext {
-    [self.navigationController pushViewController:[CLWDetailsViewController new] animated:YES];
+    [self.navigationController pushViewController:[KCMainViewController new] animated:YES];
 }
 
 // 操作数据库

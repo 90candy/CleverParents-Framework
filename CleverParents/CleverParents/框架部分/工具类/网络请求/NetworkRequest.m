@@ -16,7 +16,7 @@
     
 }
 //POST请求
-+ (void)startPostRequest:(NSString *)urlString Parameters:(NSDictionary *)parameters                    DataKey:(NSString *)dataKey CompletionHandler:(RequestCompletion)comletionHandler {
++ (void)startPostRequest:(NSString *)urlString Parameters:(NSDictionary *)parameters DataKey:(NSString *)dataKey CompletionHandler:(RequestCompletion)comletionHandler {
     AFHTTPSessionManager *manager = [self sessionManager];
     [manager POST:[NSString stringWithFormat:@"%@%@",SEVER_URL,urlString] parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self handlerResponse:responseObject error:nil DataKey:dataKey CompletionHandler:comletionHandler];
@@ -30,7 +30,13 @@
 + (void)startUploadRequest:(NSString *)urlString ImageUrl:(NSString *)imageUrl Parameters:(NSDictionary *)parameters DataKey:(NSString *)dataKey CompletionHandler:(RequestCompletion)completionHandler {
     AFHTTPSessionManager *manager = [self sessionManager];
     [manager POST:[NSString stringWithFormat:@"%@%@",SEVER_URL,urlString] parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+
+        //如果图片不需要压缩：
+        //NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
+        
+        //如果图片需要压缩处理：
+        NSData *imageData = [self imageCompression:imageUrl];
+        
         [formData appendPartWithFileData:imageData
                                     name:@"file"
                                 fileName:@"image.jpg"
@@ -94,6 +100,34 @@
     if (comletionHandler) {
         comletionHandler(response);
     }
+}
+
+// 图片压缩处理
++ (NSData *)imageCompression:(NSString *)imageUrl {
+    //图片压缩比例
+    CGFloat compressRatio = 1.0;
+    //限制上传的大小(kb)
+    CGFloat needSize = 200.0;
+    //读取图片
+    UIImage *avatarImage = [UIImage imageWithContentsOfFile:imageUrl];
+    NSData *imageData = UIImageJPEGRepresentation(avatarImage,compressRatio);
+    //计算图片大小(kb)
+    CGFloat length = [imageData length] / 1000;
+    Log(@"原图片大小 - %fkb", length);
+    int num = 0;
+    //当图片大于200Kb时进行图片压缩
+    while (length > needSize) {
+        //缩小比例(数字越是无限接近1时越精确，但是计算量会更大，0.8左右就行了)
+        compressRatio *= 0.9;
+        imageData = UIImageJPEGRepresentation(avatarImage,compressRatio);
+        length = [imageData length] / 1000;
+        num ++;
+    }
+    Log(@"循环次数 - %d", num);
+    imageData = UIImageJPEGRepresentation(avatarImage,compressRatio);
+    length = [imageData length] / 1000;
+    Log(@"实际上传图片大小 - %fkb", length);
+    return imageData;
 }
 
 

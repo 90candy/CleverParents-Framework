@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+
+#import "LaunchIntroductionView.h"
+
 #import "CLWRootTabBarViewController.h"
 
 /// 个推开发者网站中申请App时，注册的AppId、AppKey、AppSecret
@@ -35,6 +38,9 @@
     
     // 加载主框架
     [self loadMainWindow];
+    
+    // 加载引导页
+    [LaunchIntroductionView sharedWithImages:@[@"guide_one.jpg",@"guide_two.jpg",@"guide_three.jpg"]];
     
     return YES;
 }

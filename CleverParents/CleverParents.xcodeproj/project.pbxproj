@@ -43,6 +43,12 @@
 		3630ABE91F4ABA38005A55AD /* img_youer_platform.png in Resources */ = {isa = PBXBuildFile; fileRef = 3630ABE81F4ABA38005A55AD /* img_youer_platform.png */; };
 		36A33B891F50061D00C29CFC /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A33B881F50061D00C29CFC /* NotificationService.m */; };
 		36A33B8D1F50061D00C29CFC /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36A33B851F50061D00C29CFC /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36B2BCCC1FB98C6B0001C8C7 /* UIImage+ImgSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B2BCCB1FB98C6B0001C8C7 /* UIImage+ImgSize.m */; };
+		36BE3A041FB02C6E007D33E0 /* LaunchIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BE3A031FB02C34007D33E0 /* LaunchIntroductionView.m */; };
+		36BE3A051FB02C79007D33E0 /* guide_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36BE39FE1FB02BCE007D33E0 /* guide_one.jpg */; };
+		36BE3A061FB02C79007D33E0 /* guide_three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36BE39FF1FB02BCE007D33E0 /* guide_three.jpg */; };
+		36BE3A071FB02C79007D33E0 /* guide_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36BE3A001FB02BCE007D33E0 /* guide_two.jpg */; };
+		36DFFD6A1FA9BAD600F12BA1 /* KCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DFFD691FA9BAD600F12BA1 /* KCMainViewController.m */; };
 		6B7E2F3E41AE9284D3653065 /* libPods-CleverParents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B616EF5C19AF35D4B13FA79 /* libPods-CleverParents.a */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +159,15 @@
 		36A33B871F50061D00C29CFC /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		36A33B881F50061D00C29CFC /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		36A33B8A1F50061D00C29CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B2BCCA1FB98C6B0001C8C7 /* UIImage+ImgSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImgSize.h"; sourceTree = "<group>"; };
+		36B2BCCB1FB98C6B0001C8C7 /* UIImage+ImgSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImgSize.m"; sourceTree = "<group>"; };
+		36BE39FE1FB02BCE007D33E0 /* guide_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_one.jpg; sourceTree = "<group>"; };
+		36BE39FF1FB02BCE007D33E0 /* guide_three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_three.jpg; sourceTree = "<group>"; };
+		36BE3A001FB02BCE007D33E0 /* guide_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide_two.jpg; sourceTree = "<group>"; };
+		36BE3A021FB02C34007D33E0 /* LaunchIntroductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchIntroductionView.h; sourceTree = "<group>"; };
+		36BE3A031FB02C34007D33E0 /* LaunchIntroductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchIntroductionView.m; sourceTree = "<group>"; };
+		36DFFD681FA9BAD600F12BA1 /* KCMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCMainViewController.h; sourceTree = "<group>"; };
+		36DFFD691FA9BAD600F12BA1 /* KCMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCMainViewController.m; sourceTree = "<group>"; };
 		53F448ACF9BA41752ADAD77C /* libPods-CleverParentsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleverParentsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B616EF5C19AF35D4B13FA79 /* libPods-CleverParents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleverParents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC357D74711216AB04E0E83 /* libPods-CleverParentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleverParentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,6 +341,8 @@
 			children = (
 				3630AAC31F4A6F44005A55AD /* CLWSchoolViewController.h */,
 				3630AAC41F4A6F44005A55AD /* CLWSchoolViewController.m */,
+				36B2BCCA1FB98C6B0001C8C7 /* UIImage+ImgSize.h */,
+				36B2BCCB1FB98C6B0001C8C7 /* UIImage+ImgSize.m */,
 			);
 			path = "学校";
 			sourceTree = "<group>";
@@ -355,6 +372,8 @@
 			children = (
 				3630AAC61F4A6F4D005A55AD /* CLWHomeViewController.h */,
 				3630AAC71F4A6F4D005A55AD /* CLWHomeViewController.m */,
+				36DFFD681FA9BAD600F12BA1 /* KCMainViewController.h */,
+				36DFFD691FA9BAD600F12BA1 /* KCMainViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -407,6 +426,7 @@
 		3630AADA1F4A7741005A55AD /* 资源部分 */ = {
 			isa = PBXGroup;
 			children = (
+				3689209F1FB01D0B0080B358 /* 第三方库 */,
 				3630ABC51F4AB324005A55AD /* 图片 */,
 			);
 			path = "资源部分";
@@ -415,6 +435,7 @@
 		3630ABC51F4AB324005A55AD /* 图片 */ = {
 			isa = PBXGroup;
 			children = (
+				36BE39FD1FB02BCE007D33E0 /* 引导页 */,
 				3630ABC61F4AB324005A55AD /* 标签控制器 */,
 				3630ABE01F4AB768005A55AD /* img_lunch.png */,
 				3630ABD91F4AB34F005A55AD /* main_menu_bg.png */,
@@ -439,6 +460,14 @@
 			path = "标签控制器";
 			sourceTree = "<group>";
 		};
+		3689209F1FB01D0B0080B358 /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				36BE3A011FB02C34007D33E0 /* LaunchIntroduction */,
+			);
+			path = "第三方库";
+			sourceTree = "<group>";
+		};
 		36A33B861F50061D00C29CFC /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +476,25 @@
 				36A33B8A1F50061D00C29CFC /* Info.plist */,
 			);
 			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		36BE39FD1FB02BCE007D33E0 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				36BE39FE1FB02BCE007D33E0 /* guide_one.jpg */,
+				36BE39FF1FB02BCE007D33E0 /* guide_three.jpg */,
+				36BE3A001FB02BCE007D33E0 /* guide_two.jpg */,
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		36BE3A011FB02C34007D33E0 /* LaunchIntroduction */ = {
+			isa = PBXGroup;
+			children = (
+				36BE3A021FB02C34007D33E0 /* LaunchIntroductionView.h */,
+				36BE3A031FB02C34007D33E0 /* LaunchIntroductionView.m */,
+			);
+			path = LaunchIntroduction;
 			sourceTree = "<group>";
 		};
 		6D2DB1364C80F62D6EEFE378 /* Frameworks */ = {
@@ -615,6 +663,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BE3A051FB02C79007D33E0 /* guide_one.jpg in Resources */,
+				36BE3A061FB02C79007D33E0 /* guide_three.jpg in Resources */,
+				36BE3A071FB02C79007D33E0 /* guide_two.jpg in Resources */,
 				3630ABE11F4AB768005A55AD /* img_lunch.png in Resources */,
 				3630ABD71F4AB324005A55AD /* menu_school_normal@3x.png in Resources */,
 				3630ABD81F4AB324005A55AD /* menu_school_selected@3x.png in Resources */,
@@ -713,14 +764,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BE3A041FB02C6E007D33E0 /* LaunchIntroductionView.m in Sources */,
 				3625873E1FA1B76F009AE1BF /* CLWBaseModel.m in Sources */,
 				362587281FA1ADFD009AE1BF /* NetworkRequest.m in Sources */,
+				36B2BCCC1FB98C6B0001C8C7 /* UIImage+ImgSize.m in Sources */,
 				362587271FA1ADF6009AE1BF /* Response.m in Sources */,
 				362587201FA1AD76009AE1BF /* UIDevice+CLWPhoneModel.m in Sources */,
 				3630AAC21F4A6F23005A55AD /* CLWMineViewController.m in Sources */,
 				3630AAC51F4A6F44005A55AD /* CLWSchoolViewController.m in Sources */,
 				3630ABA91F4A77BE005A55AD /* CLWRootTabBarViewController.m in Sources */,
 				3630ABB11F4AA8B4005A55AD /* ImageButton.m in Sources */,
+				36DFFD6A1FA9BAD600F12BA1 /* KCMainViewController.m in Sources */,
 				3630AAD41F4A7175005A55AD /* CLWNavigationViewController.m in Sources */,
 				3630ABAE1F4A8BBA005A55AD /* CLWDetailsViewController.m in Sources */,
 				3630AA7F1F4A6A16005A55AD /* AppDelegate.m in Sources */,
